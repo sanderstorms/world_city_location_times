@@ -1,3 +1,12 @@
+CREATE TABLE IF NOT EXISTS location(
+   country           VARCHAR(40) NOT NULL
+  ,city				 VARCHAR(40) NOT NULL
+  ,latitude          NUMERIC(10,6) NOT NULL
+  ,longitude         NUMERIC(11,6) NOT NULL
+  ,timezone			 VARCHAR(40) NOT NULL
+  ,utcoffset         NUMERIC(2,1) NOT NULL
+);
+
 INSERT INTO location (country, city, latitude, longitude,timezone, utcoffset) VALUES ('Afghanistan','Kabul',34.5166667,69.1833344,'Asia/Kabul',4.5);
 INSERT INTO location (country, city, latitude, longitude,timezone, utcoffset) VALUES ('Afghanistan','Kandahar',31.61,65.6999969,'Asia/Kabul',4.5);
 INSERT INTO location (country, city, latitude, longitude,timezone, utcoffset) VALUES ('Afghanistan','Mazar - e Sharif',36.7069444,67.1122208,'Asia/Kabul',4.5);
